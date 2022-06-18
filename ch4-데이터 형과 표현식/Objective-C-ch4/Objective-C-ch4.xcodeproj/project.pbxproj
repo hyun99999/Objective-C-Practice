@@ -60,11 +60,19 @@
 		F89F5107285D526800EEA5A4 /* Objective-C-ch4 */ = {
 			isa = PBXGroup;
 			children = (
-				F89F5112285D850300EEA5A4 /* Calculator.h */,
-				F89F5113285D853D00EEA5A4 /* Calculator.m */,
+				F89F5116285D85C500EEA5A4 /* Calculator */,
 				F89F5108285D526800EEA5A4 /* main.m */,
 			);
 			path = "Objective-C-ch4";
+			sourceTree = "<group>";
+		};
+		F89F5116285D85C500EEA5A4 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				F89F5112285D850300EEA5A4 /* Calculator.h */,
+				F89F5113285D853D00EEA5A4 /* Calculator.m */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
