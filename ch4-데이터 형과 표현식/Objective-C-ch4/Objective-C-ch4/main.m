@@ -7,6 +7,61 @@
 
 #import <Foundation/Foundation.h>
 
+// MARK: - Calculator
+
+//MARK: - @interface
+
+@interface Calculator : NSObject
+
+// 누산기 메서드
+- (void)setAccumulator:(double)value;
+- (void)clear;
+- (double)accumulator;
+
+// 산술 연산 메서드
+- (void)add:(double)value;
+- (void)subtract:(double)value;
+- (void)multiply:(double)value;
+- (void)divide:(double)value;
+
+@end
+
+//MARK: - @implementation
+
+@implementation Calculator {
+    double accumulator;
+}
+
+- (void)setAccumulator:(double)value {
+    accumulator = value;
+}
+
+- (void)clear {
+    accumulator = 0;
+}
+
+- (double)accumulator {
+    return accumulator;
+}
+
+- (void)add:(double)value {
+    accumulator += value;
+}
+
+- (void)subtract:(double)value {
+    accumulator -=value;
+}
+
+- (void)multiply:(double)value {
+    accumulator *= value;
+}
+
+- (void)divide:(double)value {
+    accumulator /= value;
+}
+
+@end
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int intergerVar = 100;
@@ -29,6 +84,20 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i", (int)(29.55 + 21.99));
         // 50
         NSLog(@"%i", (int)29.55 + (int)21.99);
+        
+        //MARK: - Calculator
+        
+        Calculator *deskCalc = [[Calculator alloc] init];
+        
+        [deskCalc setAccumulator:100.0];
+        [deskCalc add:200.];
+        [deskCalc divide:15.0];
+        [deskCalc subtract:10.0];
+        // double 로 형변환 됨.
+        [deskCalc multiply:5];
+        
+        // The result is 50
+        NSLog(@"The result is %g", [deskCalc accumulator]);
     }
     return 0;
 }
