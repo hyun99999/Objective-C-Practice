@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F89F5109285D526800EEA5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F89F5108285D526800EEA5A4 /* main.m */; };
+		F89F5114285D853D00EEA5A4 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F89F5113285D853D00EEA5A4 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F89F5105285D526800EEA5A4 /* Objective-C-ch4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-ch4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89F5108285D526800EEA5A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F89F5112285D850300EEA5A4 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		F89F5113285D853D00EEA5A4 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		F89F5107285D526800EEA5A4 /* Objective-C-ch4 */ = {
 			isa = PBXGroup;
 			children = (
+				F89F5112285D850300EEA5A4 /* Calculator.h */,
+				F89F5113285D853D00EEA5A4 /* Calculator.m */,
 				F89F5108285D526800EEA5A4 /* main.m */,
 			);
 			path = "Objective-C-ch4";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F89F5109285D526800EEA5A4 /* main.m in Sources */,
+				F89F5114285D853D00EEA5A4 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

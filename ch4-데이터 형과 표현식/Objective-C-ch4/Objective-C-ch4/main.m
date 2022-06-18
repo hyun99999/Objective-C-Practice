@@ -5,62 +5,7 @@
 //  Created by kimhyungyu on 2022/06/18.
 //
 
-#import <Foundation/Foundation.h>
-
-// MARK: - Calculator
-
-//MARK: - @interface
-
-@interface Calculator : NSObject
-
-// 누산기 메서드
-- (void)setAccumulator:(double)value;
-- (void)clear;
-- (double)accumulator;
-
-// 산술 연산 메서드
-- (void)add:(double)value;
-- (void)subtract:(double)value;
-- (void)multiply:(double)value;
-- (void)divide:(double)value;
-
-@end
-
-//MARK: - @implementation
-
-@implementation Calculator {
-    double accumulator;
-}
-
-- (void)setAccumulator:(double)value {
-    accumulator = value;
-}
-
-- (void)clear {
-    accumulator = 0;
-}
-
-- (double)accumulator {
-    return accumulator;
-}
-
-- (void)add:(double)value {
-    accumulator += value;
-}
-
-- (void)subtract:(double)value {
-    accumulator -=value;
-}
-
-- (void)multiply:(double)value {
-    accumulator *= value;
-}
-
-- (void)divide:(double)value {
-    accumulator /= value;
-}
-
-@end
+#import "Calculator.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
