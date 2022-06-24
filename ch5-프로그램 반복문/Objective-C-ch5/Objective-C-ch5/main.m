@@ -9,6 +9,7 @@
 
 // 삼각수 표를 생성하는 프로그램
 
+/*
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int n, triangularNumber;
@@ -26,3 +27,26 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+*/
+
+// 사용자로부터 삼각수를 입력받아서 계산하는 프로그램
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        int n, number, triangularNumber;
+        
+        NSLog(@"What triangular number do you want?");
+        scanf("%i", &number);
+        
+        triangularNumber = 0;
+        
+        for(n = 1; n <= number; ++n) {
+            triangularNumber += n;
+        }
+        
+        NSLog(@"Triangular number %i is %i", number, triangularNumber);
+    }
+    
+    return 0;
+}
+
