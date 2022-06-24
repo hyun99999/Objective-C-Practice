@@ -31,6 +31,7 @@ int main(int argc, const char * argv[]) {
 
 // 사용자로부터 삼각수를 입력받아서 계산하는 프로그램
 
+/*
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int number, triangularNumber;
@@ -49,4 +50,45 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+*/
 
+// 두 개의 양의 정수에서 최대공약수를 찾는 프로그램
+/*
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        unsigned int u, v, temp;
+        
+        NSLog(@"Please type in tow nonnegative integers.");
+        scanf("%u%u", &u, &v);
+        
+        while(v != 0) {
+            temp = u % v;
+            u = v;
+            v = temp;
+        }
+        
+        NSLog(@"Their greatest common divisor is %u", u);
+    }
+    
+    return 0;
+}
+*/
+
+// 자릿수를 뒤집는 프로그램
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        int number, right_digit;
+        
+        NSLog(@"Enter your number.");
+        scanf("%i", &number);
+        
+        while(number != 0) {
+            right_digit = number % 10;
+            NSLog(@"%i", right_digit);
+            number /= 10;
+        }
+    }
+    
+    return 0;
+}
