@@ -33,14 +33,14 @@ int main(int argc, const char * argv[]) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int n, number, triangularNumber;
+        int number, triangularNumber;
         
         NSLog(@"What triangular number do you want?");
         scanf("%i", &number);
         
         triangularNumber = 0;
         
-        for(n = 1; n <= number; ++n) {
+        for(int n = 1; n <= number; ++n) {
             triangularNumber += n;
         }
         
