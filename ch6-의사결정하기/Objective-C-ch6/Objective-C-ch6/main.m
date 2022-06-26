@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+/*
 // MARK: - @Interface
 
 @interface Fraction : NSObject
@@ -72,6 +73,25 @@ int main(int argc, const char * argv[]) {
         [bFraction print]; // bFraction 에 값을 할당하지 않는다.
         NSLog(@" =");
         NSLog(@"%g",[bFraction convertToNum]);
+    }
+    
+    return 0;
+}
+*/
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        char c;
+        
+        NSLog(@"Enter a single charcter:");
+        scanf("%c", &c);
+        
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+            NSLog(@"It's an alphabetic character.");
+        else if (c >= '0' && c <= '9')
+            NSLog(@"It's a digit.");
+        else
+            NSLog(@"It's a special character.");
     }
     
     return 0;
