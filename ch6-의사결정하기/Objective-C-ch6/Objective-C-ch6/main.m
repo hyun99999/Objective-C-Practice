@@ -84,7 +84,7 @@ int main(int argc, const char * argv[]) {
         char c;
         
         NSLog(@"Enter a single charcter:");
-        scanf("%c", &c);
+        scanf(" %c", &c);
         
         if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
             NSLog(@"It's an alphabetic character.");
