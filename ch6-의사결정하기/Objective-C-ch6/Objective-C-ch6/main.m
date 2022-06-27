@@ -79,6 +79,8 @@ int main(int argc, const char * argv[]) {
 }
 */
 
+// 키보드에서 입력받은 문자 하나를 분류
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         char c;
