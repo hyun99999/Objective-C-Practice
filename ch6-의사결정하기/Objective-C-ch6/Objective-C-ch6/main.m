@@ -133,7 +133,7 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Unknow operator.");
                 break;
         }
-        
+        // 소수 2자리까지 출력
         NSLog(@"%.2f", [deskCalc accumulator]);
     }
     
