@@ -5,7 +5,9 @@
 //  Created by kimhyungyu on 2022/06/26.
 //
 
-#import <Foundation/Foundation.h>
+#import "Calculator/Calculator.h"
+
+// #import <Foundation/Foundation.h>
 
 /*
 // MARK: - @Interface
@@ -81,6 +83,7 @@ int main(int argc, const char * argv[]) {
 
 // 키보드에서 입력받은 문자 하나를 분류
 
+/*
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         char c;
@@ -94,6 +97,44 @@ int main(int argc, const char * argv[]) {
             NSLog(@"It's a digit.");
         else
             NSLog(@"It's a special character.");
+    }
+    
+    return 0;
+}
+ */
+
+// 연산자를 Switch 로 구분하는 계산기
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        double value1, value2;
+        char operator;
+        Calculator *deskCalc = [[Calculator alloc] init];
+        
+        NSLog(@"Type int your expression.");
+        scanf("%lf %c %lf", &value1, &operator ,&value2);
+        
+        [deskCalc setAccumulator:value1];
+        
+        switch (operator) {
+            case '+':
+                [deskCalc add:value2];
+                break;
+            case '-':
+                [deskCalc subtract:value2];
+                break;
+            case '*':
+                [deskCalc multiply:value2];
+                break;
+            case '/':
+                [deskCalc divide:value2];
+                break;
+            default:
+                NSLog(@"Unknow operator.");
+                break;
+        }
+        
+        NSLog(@"%.2f", [deskCalc accumulator]);
     }
     
     return 0;
