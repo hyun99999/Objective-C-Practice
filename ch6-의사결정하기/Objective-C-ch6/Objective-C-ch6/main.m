@@ -105,6 +105,7 @@ int main(int argc, const char * argv[]) {
 
 // 연산자를 Switch 로 구분하는 계산기
 
+/*
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         double value1, value2;
@@ -137,5 +138,29 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%.2f", [deskCalc accumulator]);
     }
     
+    return 0;
+}
+*/
+
+// BOOL 형을 사용하는 소수 표를 생성하는 프로그램
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        BOOL isPrime;
+        
+        for (int p = 2; p <= 50; ++p) {
+            isPrime = YES;
+            
+            for (int d = 2; d < p; ++d) {
+                if (p % d == 0) {
+                    isPrime = NO;
+                }
+            }
+            
+            if (isPrime == YES) {
+                NSLog(@"%i ", p);
+            }
+        }
+    }
     return 0;
 }
