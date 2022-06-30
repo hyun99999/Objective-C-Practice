@@ -28,4 +28,9 @@
         return NAN;
 }
 
+- (void)setTo:(int)n over:(int)d {
+    self.numerator = n;
+    self.denominator = d;
+}
+
 @end
