@@ -9,29 +9,15 @@
 
 #import "Fraction.h"
 
-@implementation Fraction {
-    int numerator;
-    int denominator;
-}
+// MARK: -  Fraction Class
+
+@implementation Fraction
+
+// synthesize 는 프로퍼티에 해당하는 getter, setter 메서드를 생성하도록 지시한다.
+@synthesize numerator, denominator;
 
 - (void)print {
     NSLog(@"%i/%i", numerator, denominator);
-}
-
-- (void)setNumerator:(int)n {
-    numerator = n;
-}
-
-- (void)setDenominatr:(int)d {
-    denominator = d;
-}
-
-- (int)numerator {
-    return numerator;
-}
-
-- (int)denominator {
-    return denominator;
 }
 
 - (double)convertToNum {

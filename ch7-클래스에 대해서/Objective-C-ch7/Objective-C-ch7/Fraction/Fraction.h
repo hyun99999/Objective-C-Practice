@@ -13,11 +13,8 @@
 
 @interface Fraction : NSObject
 
+@property int numerator, denominator;
 - (void) print;
-- (void) setNumerator:(int)n;
-- (void) setDenominatr:(int)d;
-- (int) numerator;
-- (int) denominator;
 - (double) convertToNum;
 
 @end
