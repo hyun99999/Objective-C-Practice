@@ -27,9 +27,12 @@ int main(int argc, const char * argv[]) {
         [bFraction setTo:1 over:4];
         [bFraction print];
         
-        [aFraction add:bFraction];
+        // 객체의 참조를 반환해주었기 때문에 Fraction 객체를 생성하거나 초기화하지 않아도 된다.
+        Fraction *resultFraction;
         
-        [aFraction print];
+        resultFraction = [aFraction add:bFraction];
+        
+        [resultFraction print];
     }
       
     return 0;

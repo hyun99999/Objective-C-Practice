@@ -33,11 +33,15 @@
     self.denominator = d;
 }
 
-- (void)add:(Fraction *)f {
-    self.numerator = self.numerator * f.denominator + self.denominator * f.numerator;
-    self.denominator = self.denominator * f.denominator;
+- (Fraction *)add:(Fraction *)f {
+    Fraction *result = [[Fraction alloc] init];
     
-    [self reduce];
+    result.numerator = self.numerator * f.denominator + self.denominator * f.numerator;
+    result.denominator = self.denominator * f.denominator;
+    
+    [result reduce];
+    
+    return result;
 }
 
 /// 최대 공약수로 약분.
