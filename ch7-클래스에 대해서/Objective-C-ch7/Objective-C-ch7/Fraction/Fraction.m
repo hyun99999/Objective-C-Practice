@@ -38,4 +38,21 @@
     self.denominator = self.denominator * f.denominator;
 }
 
+/// 최대 공약수로 약분.
+- (void)reduce {
+    // 정적 변수는 초깃값이 0이다.
+    int u = self.numerator;
+    int v = self.denominator;
+    int temp;
+    
+    while (v != 0) {
+        temp = u % v;
+        u = v;
+        v = temp;
+    }
+    
+    self.numerator /= u;
+    self.denominator /= u;
+}
+
 @end
