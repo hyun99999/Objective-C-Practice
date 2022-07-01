@@ -36,6 +36,8 @@
 - (void)add:(Fraction *)f {
     self.numerator = self.numerator * f.denominator + self.denominator * f.numerator;
     self.denominator = self.denominator * f.denominator;
+    
+    [self reduce];
 }
 
 /// 최대 공약수로 약분.

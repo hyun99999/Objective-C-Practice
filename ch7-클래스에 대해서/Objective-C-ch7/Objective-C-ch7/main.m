@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         [bFraction print];
         
         [aFraction add:bFraction];
-        [aFraction reduce];
+        
         [aFraction print];
     }
       
