@@ -33,4 +33,9 @@
     self.denominator = d;
 }
 
+- (void)add:(Fraction *)f {
+    self.numerator = self.numerator * f.denominator + self.denominator * f.numerator;
+    self.denominator = self.denominator * f.denominator;
+}
+
 @end
