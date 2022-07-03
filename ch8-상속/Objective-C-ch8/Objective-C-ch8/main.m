@@ -7,10 +7,48 @@
 
 #import <Foundation/Foundation.h>
 
+//MARK: - Class A
+
+@interface ClassA : NSObject {
+    int x;
+}
+
+- (void)initVar;
+
+@end
+
+@implementation ClassA
+
+- (void)initVar {
+    x = 100;
+}
+
+@end
+
+//MARK: - Class B
+
+@interface ClassB : ClassA
+
+- (void)printVar;
+
+@end
+
+@implementation ClassB
+
+- (void)printVar {
+    NSLog(@"x = %i", x);
+}
+
+@end
+
+//MARK: - main
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        ClassB *b = [[ClassB alloc] init];
+        
+        [b initVar];
+        [b printVar];
     }
     return 0;
 }
