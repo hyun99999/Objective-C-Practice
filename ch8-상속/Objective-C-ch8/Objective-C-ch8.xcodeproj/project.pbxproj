@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F860989B2876AE4F00449CAA /* XYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
 		F86ADE0E2871D5580047783B /* Objective-C-ch8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-ch8"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86ADE112871D5580047783B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F86ADE192871E63A0047783B /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
@@ -44,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F860989A2876AE3000449CAA /* XYPoint */ = {
+			isa = PBXGroup;
+			children = (
+				F860989B2876AE4F00449CAA /* XYPoint.h */,
+			);
+			path = XYPoint;
+			sourceTree = "<group>";
+		};
 		F86ADE052871D5580047783B = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +72,7 @@
 		F86ADE102871D5580047783B /* Objective-C-ch8 */ = {
 			isa = PBXGroup;
 			children = (
+				F860989A2876AE3000449CAA /* XYPoint */,
 				F86ADE112871D5580047783B /* main.m */,
 				F86ADE1E2871E9980047783B /* Square */,
 				F86ADE182871E62F0047783B /* Rectangle */,
