@@ -8,14 +8,23 @@
 
 #import "Rectangle.h"
 #import "Square.h"
+#import "XYPoint.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Rectangle *myRect = [[Rectangle alloc] init];
+        XYPoint *myPoint = [[XYPoint alloc] init];
+        
+        [myPoint setX:100 andY:200];
         
         [myRect setWidth:5 andHeight:8];
+        myRect.origin = myPoint;
+//        다음의 표현식을 사용하는 것과 동일하다. origin 을 @property 로 선언하지 않아도 setOrigin 메서드가 있다면 위와 같은 표현식도 가능하다.
+//        [myRect setOrigin:myPoint]
+        
         
         NSLog(@"Rectangle: w = %i, h = %i", myRect.width, myRect.height);
+        NSLog(@"Origin: at (%i, %i)", myRect.origin.x, myRect.origin.y);
         NSLog(@"Area: %i, Permineter = %i", [myRect area], [myRect perimeter]);
         
         Square *mySquare = [[Square alloc] init];
