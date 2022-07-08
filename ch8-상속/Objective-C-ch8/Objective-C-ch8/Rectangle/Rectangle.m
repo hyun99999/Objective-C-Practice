@@ -25,7 +25,12 @@
 }
 
 - (XYPoint *)origin {
-    return origin;
+    // 객체의 사본을 만들어서 반환.
+    XYPoint *theOrigin = [[XYPoint alloc] init];
+    theOrigin.x = origin.x;
+    theOrigin.y = origin.y;
+    
+    return theOrigin;
 }
 
 - (void)setWidth:(int)w andHeight:(int)h {
