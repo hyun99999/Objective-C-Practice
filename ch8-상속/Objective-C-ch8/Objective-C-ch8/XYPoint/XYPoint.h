@@ -5,9 +5,9 @@
 //  Created by kimhyungyu on 2022/07/07.
 //
 
-#import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
 
-@interface XYPoint : NSObject
+@interface XYPoint: NSObject
 
 @property int x, y;
 

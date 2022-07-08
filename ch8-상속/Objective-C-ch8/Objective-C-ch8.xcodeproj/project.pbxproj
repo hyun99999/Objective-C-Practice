@@ -10,6 +10,7 @@
 		F86ADE122871D5580047783B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ADE112871D5580047783B /* main.m */; };
 		F86ADE1B2871E6AC0047783B /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ADE1A2871E6AC0047783B /* Rectangle.m */; };
 		F86ADE212871E9FA0047783B /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ADE202871E9FA0047783B /* Square.m */; };
+		F89E8F222878774E0093CE55 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F89E8F212878774E0093CE55 /* XYPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		F86ADE1A2871E6AC0047783B /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 		F86ADE1F2871E9AA0047783B /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		F86ADE202871E9FA0047783B /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		F89E8F212878774E0093CE55 /* XYPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				F860989B2876AE4F00449CAA /* XYPoint.h */,
+				F89E8F212878774E0093CE55 /* XYPoint.m */,
 			);
 			path = XYPoint;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				F86ADE212871E9FA0047783B /* Square.m in Sources */,
 				F86ADE122871D5580047783B /* main.m in Sources */,
 				F86ADE1B2871E6AC0047783B /* Rectangle.m in Sources */,
+				F89E8F222878774E0093CE55 /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,21 @@
 
 #import "Rectangle.h"
 
-@implementation Rectangle
+@implementation Rectangle {
+    // 우선, setter, getter 를 만들어 보겠다.
+    XYPoint *origin;
+}
 
 @synthesize width, height;
+
+- (void)setOrigin:(XYPoint *)pt {
+    origin = pt;
+}
+
+- (XYPoint *)origin {
+    return origin;
+}
+
 - (void)setWidth:(int)w andHeight:(int)h {
     width = w;
     height = h;
