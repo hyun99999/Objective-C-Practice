@@ -27,6 +27,10 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Origin: at (%i, %i)", myRect.origin.x, myRect.origin.y);
         NSLog(@"Area: %i, Permineter = %i", [myRect area], [myRect perimeter]);
         
+        [myPoint setX:50 andY:50];
+        
+        NSLog(@"Origin: at (%i, %i)", myRect.origin.x, myRect.origin.y);
+        
         Square *mySquare = [[Square alloc] init];
         
         [mySquare setSide:5];
