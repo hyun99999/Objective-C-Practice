@@ -8,6 +8,8 @@
 #import "Complex.h"
 #import "Fraction.h"
 
+/*
+ // 다형성
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // alloc: 객체의 데이터를 저장하기에 충분한 메모리 공간이 예약. 즉, 생성.
@@ -48,6 +50,7 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+ */
 
 /*
  
@@ -64,3 +67,35 @@ int main(int argc, const char * argv[]) {
  7/30
  
 */
+
+// 동적 바인딩
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // id 형
+        // 어느 클래스의 객체든 저장할 수 있다.
+        id dataValue;
+        Fraction *f1 = [[Fraction alloc] init];
+        Complex *c1 = [[Complex alloc] init];
+        
+        [f1 setTo:2 over:5];
+        [c1 setReal:10 andImaginary:2.5];
+        
+        // dataValue 에게 분수를 대입.
+        dataValue = f1;
+        // 컴파일 말고 런타임에 객체의 클래스에 대해서 앎.
+        [dataValue print];
+        
+        // dataValue 에게 복소수를 대입.
+        dataValue = c1;
+        // 런타임 에러 발생.(setTo:over: 는 Fraction 클래스의 인스턴스 메서드이다.)
+//        [dataValue setTo:1 over:1];
+        [dataValue print];
+    }
+    
+    return  0;
+}
+
+/*
+ 2/5
+ 10 + 2.5i
+ */

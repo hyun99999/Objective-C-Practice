@@ -12,6 +12,8 @@
 @interface Complex : NSObject
 
 @property double real, imaginary;
+// - 부호는 인스턴스 메서드.
+// + 부호는 클래스 메서드
 - (void)print;
 - (void)setReal:(double)a andImaginary:(double)b;
 - (Complex *)add:(Complex *)f;
