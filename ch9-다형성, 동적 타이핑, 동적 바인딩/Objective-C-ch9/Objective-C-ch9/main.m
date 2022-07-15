@@ -103,6 +103,7 @@ int main(int argc, const char * argv[]) {
  10 + 2.5i
  */
 
+/*
 #import "Graphics/Square.h"
 
 int main(int argc, const char * argv[]) {
@@ -154,3 +155,28 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Square is a subclass of a rectangle");
     }
 }
+*/
+
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // - array: 비어있는 배열을 만들고 반환.
+        NSArray *myArray = [NSArray array];
+        
+        @try {
+            [myArray objectAtIndex:2];
+        } @catch (NSException *exception) {
+            NSLog(@"Caught %@%@", exception.name, exception.reason);
+        } @finally {
+            // Code that gets executed whether or not an exception is thrown
+        }
+        
+        NSLog(@"Execution continues");
+    }
+}
+
+/*
+ Caught NSRangeException*** -[__NSArray0 objectAtIndex:]: index 2 beyond bounds for empty NSArray
+ Execution continues
+*/
