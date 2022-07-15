@@ -73,6 +73,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // id 형
         // 어느 클래스의 객체든 저장할 수 있다.
+        // id 타입의 변수에는 . 연산자를 사용할 수 없다.
         id dataValue;
         Fraction *f1 = [[Fraction alloc] init];
         Complex *c1 = [[Complex alloc] init];
