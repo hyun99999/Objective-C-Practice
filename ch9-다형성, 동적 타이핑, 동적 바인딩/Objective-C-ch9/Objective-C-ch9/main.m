@@ -109,6 +109,48 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Square *mySquare = [[Square alloc] init];
         
-        //
+        //MARK: - isMemberOf:
+        
+        if ([mySquare isMemberOfClass:[Square class]] == YES)
+            NSLog(@"mySquare is a member of Square class");
+        
+        if ([mySquare isMemberOfClass:[Rectangle class]] == YES)
+            NSLog(@"mySquare is a member of Rectangle class");
+        
+        if ([mySquare isMemberOfClass:[XYPoint class]] == YES)
+            NSLog(@"mySquare is a member of XYPoint class");
+        
+        //MARK: - isKindOf:
+        
+        if ([mySquare isKindOfClass:[Square class]] == YES)
+            NSLog(@"mySquare is a kind of Square class");
+        
+        if ([mySquare isKindOfClass:[Rectangle class]] == YES)
+            NSLog(@"mySquare is a kind of Rectangle class");
+        
+        if ([mySquare isKindOfClass:[NSObject class]] == YES)
+            NSLog(@"mySquare is a kind of NSObject class");
+        
+        //MARK: - responsdsTo:
+        
+        if ([mySquare respondsToSelector:@selector(setSide:)] == YES)
+            NSLog(@"mySquare responds to setSide: method");
+        
+        if ([mySquare respondsToSelector:@selector(setWidth:andHeight:)] == YES)
+            NSLog(@"mySquare responds to setWidth:andHeight: method");
+        
+        if ([Square respondsToSelector:@selector(alloc)] == YES)
+            NSLog(@"Square responds to alloc method");
+        
+        //MARK: - instancesRespondTo
+        
+        if ([Rectangle instancesRespondToSelector:@selector(setSide:)] == YES)
+            NSLog(@"Instances of Rectangle respond to setSide: method");
+        
+        if ([Square instancesRespondToSelector:@selector(setSide:)] == YES)
+            NSLog(@"Instances of Square respond to setSide: method");
+        
+        if ([Square isSubclassOfClass:[Rectangle class]] == YES)
+            NSLog(@"Square is a subclass of a rectangle");
     }
 }
