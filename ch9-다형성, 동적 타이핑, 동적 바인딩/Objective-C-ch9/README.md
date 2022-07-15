@@ -372,9 +372,3 @@ int main(int argc, const char * argv[]) {
  Execution continues
 */
 ```
-
----
-
-### GitHub
-
-https://github.com/hyun99999/Objective-C-Practice
