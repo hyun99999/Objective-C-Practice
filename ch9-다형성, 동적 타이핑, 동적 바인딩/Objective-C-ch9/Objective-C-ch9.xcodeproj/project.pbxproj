@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F866842D2880FE5800A72F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F866842C2880FE5800A72F93 /* main.m */; };
+		F86684352880FF4500A72F93 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = F86684342880FF4500A72F93 /* Complex.m */; };
+		F866843B2881030100A72F93 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F866843A2881030100A72F93 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		F86684292880FE5800A72F93 /* Objective-C-ch9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-ch9"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F866842C2880FE5800A72F93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F86684332880FECB00A72F93 /* Complex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		F86684342880FF4500A72F93 /* Complex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
+		F8668439288102DB00A72F93 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		F866843A2881030100A72F93 /* Fraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		F866842B2880FE5800A72F93 /* Objective-C-ch9 */ = {
 			isa = PBXGroup;
 			children = (
+				F8668439288102DB00A72F93 /* Fraction.h */,
+				F866843A2881030100A72F93 /* Fraction.m */,
+				F86684332880FECB00A72F93 /* Complex.h */,
+				F86684342880FF4500A72F93 /* Complex.m */,
 				F866842C2880FE5800A72F93 /* main.m */,
 			);
 			path = "Objective-C-ch9";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86684352880FF4500A72F93 /* Complex.m in Sources */,
 				F866842D2880FE5800A72F93 /* main.m in Sources */,
+				F866843B2881030100A72F93 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
