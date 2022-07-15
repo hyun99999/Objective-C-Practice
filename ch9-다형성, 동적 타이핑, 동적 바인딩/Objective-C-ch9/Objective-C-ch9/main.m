@@ -68,6 +68,7 @@ int main(int argc, const char * argv[]) {
  
 */
 
+/*
 // 동적 바인딩
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -95,8 +96,19 @@ int main(int argc, const char * argv[]) {
     
     return  0;
 }
+*/
 
 /*
  2/5
  10 + 2.5i
  */
+
+#import "Graphics/Square.h"
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        Square *mySquare = [[Square alloc] init];
+        
+        //
+    }
+}

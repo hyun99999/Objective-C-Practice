@@ -5,7 +5,7 @@
 //  Created by kimhyungyu on 2022/07/15.
 //
 
-#import "../Rectangle/Rectangle.h"
+#import "Rectangle.h"
 
 @interface Square: Rectangle
 

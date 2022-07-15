@@ -5,8 +5,7 @@
 //  Created by kimhyungyu on 2022/07/15.
 //
 
-#import <Foundation/Foundation.h>
-#import "../XYPoint/XYPoint.h"
+#import "XYPoint.h"
 
 @interface Rectangle: NSObject
 
