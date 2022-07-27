@@ -13,7 +13,8 @@
 
 @property int numerator, denominator;
 
-- (Fraction *)initWith:(int)n over:(int)d;
+- (id)init;
+- (id)initWith:(int)n over:(int)d;
 - (void)print;
 - (double)convertToNum;
 - (void)setTo:(int)n over:(int)d;

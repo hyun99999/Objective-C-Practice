@@ -11,8 +11,16 @@
 
 @implementation Fraction
 
+// 클래스의 이름을 하드코딩하지 않는다.
+// 서브 클래스의 객체가 부모 클래스와 다를 수 있기 때문이다.
+- (id) init {
+    // 확인을 위해서 -1 로 초기화.
+    return [self initWith:-1 over:-1];
+}
+
+// 일관성을 위해 지정된 초기화 메서드도 id 로 반환타입을 변경했다.
 // 지정된 초기화 메서드. Designated Initializer.
-- (Fraction *) initWith:(int)n over:(int)d {
+- (id) initWith:(int)n over:(int)d {
     self = [super init];
     
     if (self)
