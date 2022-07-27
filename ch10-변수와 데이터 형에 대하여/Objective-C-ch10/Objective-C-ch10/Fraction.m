@@ -11,6 +11,16 @@
 
 @implementation Fraction
 
+// 지정된 초기화 메서드. Designated Initializer.
+- (Fraction *) initWith:(int)n over:(int)d {
+    self = [super init];
+    
+    if (self)
+        [self setTo:n over:d];
+        
+    return self;
+}
+
 - (void)print {
     NSLog(@"%i/%i", self.numerator, self.denominator);
 }

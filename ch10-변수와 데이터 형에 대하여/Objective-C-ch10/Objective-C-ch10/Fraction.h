@@ -12,9 +12,11 @@
 @interface Fraction : NSObject
 
 @property int numerator, denominator;
+
+- (Fraction *)initWith:(int)n over:(int)d;
 - (void)print;
 - (double)convertToNum;
-- (void)setTo:(int)n over:(int) d;
+- (void)setTo:(int)n over:(int)d;
 - (Fraction *)add:(Fraction *)f;
 - (void)reduce;
 
