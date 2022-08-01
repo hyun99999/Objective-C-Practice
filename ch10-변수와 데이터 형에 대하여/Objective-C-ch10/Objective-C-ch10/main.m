@@ -10,14 +10,21 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Fraction *a, *b, *c;
-        c = [[Fraction alloc] init];
-        a = [[Fraction alloc] initWith:1 over:3];
-        b = [[Fraction alloc] initWith:3 over:7];
+        
+        // 다른 정적 변수와 같이 0 이외의 값을 설정하고 싶다면 init 을 재정의 하면 된다.
+        NSLog(@"Fractions allocataed: %i", [Fraction count]);
+        // Fractions allocataed: 0
+        
+        c = [[Fraction allocF] init];
+        a = [[Fraction allocF] initWith:1 over:3];
+        b = [[Fraction allocF] initWith:3 over:7];
         
         [a print];
         [b print];
         [c print];  // -1/-1
 
+        NSLog(@"Fractions allocated: %i", [Fraction count]);
+        // Fractions allocataed: 3
     }
     return 0;
 }
