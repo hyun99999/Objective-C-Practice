@@ -13,6 +13,7 @@
 
 @property int numerator, denominator;
 
+// 인스턴스 메서드는 -.
 - (id)init;
 - (id)initWith:(int)n over:(int)d;
 - (void)print;
@@ -20,5 +21,9 @@
 - (void)setTo:(int)n over:(int)d;
 - (Fraction *)add:(Fraction *)f;
 - (void)reduce;
+
+// 클래스 메서드는 +.
++ (Fraction *)allocF;
++ (int)count;
 
 @end

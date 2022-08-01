@@ -22,6 +22,7 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
+/*
 // 외부 변수 사용 예제.
 
 #import "Foo.h"
@@ -51,3 +52,4 @@ int main(int argc, const char * argv[]) {
     extern int gGlobalVar;
     gGlobalVar = val;
 }
+*/
