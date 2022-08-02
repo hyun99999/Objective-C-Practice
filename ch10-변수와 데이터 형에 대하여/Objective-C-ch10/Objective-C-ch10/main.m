@@ -69,6 +69,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         enum month { january = 1, february, march, april, may, june, july, august, september, october, november, december };
         enum month amonth;
+        enum month lastMonth;
         int days;
         
         NSLog(@"Enter month number: ");
@@ -106,6 +107,9 @@ int main(int argc, const char * argv[]) {
         if (amonth == february) {
             NSLog(@"...or 29 if it's a leap year");
         }
+        
+        lastMonth = (enum month)(amonth - 1);
+        NSLog(@"lastMont: %i", lastMonth);
         
         return 0;
     }
