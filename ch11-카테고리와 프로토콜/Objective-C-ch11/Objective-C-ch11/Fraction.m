@@ -9,6 +9,15 @@
 
 // MARK: -  Fraction Class
 
+// 이름없는 카테고리로 선언된 메소드는 메인 구현 부분에서 선언.
+// private 으로 정의.
+@interface Fraction ()
+
+- (void)reduce;
+
+@end
+
+// public 으로 정의.
 @implementation Fraction
 
 - (void)print {
