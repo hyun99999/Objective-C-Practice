@@ -5,7 +5,7 @@
 //  Created by kimhyungyu on 2022/08/09.
 //
 
-#import <Foundation/Foundation.h>
+#import "Fraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
