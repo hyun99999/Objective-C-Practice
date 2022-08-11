@@ -10,7 +10,7 @@
 @implementation Fraction (MathOps)
 
 - (Fraction *)add:(Fraction *)f {
-    Fraction *result = [[Fraction init] alloc];
+    Fraction *result = [[Fraction alloc] init];
     
     result.numerator = (self.numerator * f.denominator) + (self.denominator * f.numerator) ;
     result.denominator = self.denominator * f.denominator;
@@ -20,7 +20,7 @@
 }
 
 - (Fraction *)mul:(Fraction *)f {
-    Fraction *result = [[Fraction init] alloc];
+    Fraction *result = [[Fraction alloc] init];
     
     result.numerator = self.numerator * f.numerator;
     result.denominator = self.denominator * f.denominator;
@@ -30,7 +30,7 @@
 }
 
 - (Fraction *)sub:(Fraction *)f {
-    Fraction *result = [[Fraction init] alloc];
+    Fraction *result = [[Fraction alloc] init];
     
     result.numerator = (self.numerator * f.denominator) - (self.denominator * f.numerator) ;
     result.denominator = self.denominator * f.denominator;
@@ -40,7 +40,7 @@
 }
 
 - (Fraction *)div:(Fraction *)f {
-    Fraction *result = [[Fraction init] alloc];
+    Fraction *result = [[Fraction alloc] init];
     
     result.numerator = self.numerator * f.denominator;
     result.denominator = self.denominator * f.numerator;
