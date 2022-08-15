@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F811564028A2998E004410D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F811563F28A2998E004410D7 /* main.m */; };
+		F836BBE928AA92F300DCFF7B /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = F836BBE828AA92F300DCFF7B /* Rectangle.m */; };
+		F836BBED28AA932A00DCFF7B /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F836BBEC28AA932A00DCFF7B /* XYPoint.m */; };
 		F89487A428A50A6900E76833 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F89487A328A50A6900E76833 /* Fraction.m */; };
 		F89487B428A51A0100E76833 /* Fraction+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = F89487B328A51A0100E76833 /* Fraction+MathOps.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,10 @@
 /* Begin PBXFileReference section */
 		F811563C28A2998E004410D7 /* Objective-C-ch11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-ch11"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F811563F28A2998E004410D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F836BBE828AA92F300DCFF7B /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		F836BBEA28AA92FB00DCFF7B /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		F836BBEB28AA932400DCFF7B /* XYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		F836BBEC28AA932A00DCFF7B /* XYPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
 		F89487A228A50A6100E76833 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		F89487A328A50A6900E76833 /* Fraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		F89487B228A51A0100E76833 /* Fraction+MathOps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fraction+MathOps.h"; sourceTree = SOURCE_ROOT; };
@@ -68,6 +74,10 @@
 				F89487A328A50A6900E76833 /* Fraction.m */,
 				F89487B228A51A0100E76833 /* Fraction+MathOps.h */,
 				F89487B328A51A0100E76833 /* Fraction+MathOps.m */,
+				F836BBEA28AA92FB00DCFF7B /* Rectangle.h */,
+				F836BBE828AA92F300DCFF7B /* Rectangle.m */,
+				F836BBEB28AA932400DCFF7B /* XYPoint.h */,
+				F836BBEC28AA932A00DCFF7B /* XYPoint.m */,
 			);
 			path = "Objective-C-ch11";
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 				F811564028A2998E004410D7 /* main.m in Sources */,
 				F89487B428A51A0100E76833 /* Fraction+MathOps.m in Sources */,
 				F89487A428A50A6900E76833 /* Fraction.m in Sources */,
+				F836BBE928AA92F300DCFF7B /* Rectangle.m in Sources */,
+				F836BBED28AA932A00DCFF7B /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
