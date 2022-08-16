@@ -5,8 +5,13 @@
 //  Created by kimhyungyu on 2022/08/16.
 //
 
-#ifndef Square_h
-#define Square_h
+#import "Rectangle.h"
 
-
-#endif /* Square_h */
+@interface Square : NSObject {
+    Rectangle *rect;
+}
+- (int)setSide:(int)s;
+- (int)side;
+- (int)area;
+- (int)perimeter;
+@end
