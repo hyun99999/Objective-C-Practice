@@ -11,6 +11,7 @@
     Rectangle *rect;
 }
 - (Square *)initWithSide:(int)s;
+- (Square *)init;
 - (void)setSide:(int)s;
 - (int)side;
 - (int)area;
