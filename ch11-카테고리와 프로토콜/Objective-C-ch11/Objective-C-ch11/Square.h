@@ -10,7 +10,7 @@
 @interface Square : NSObject {
     Rectangle *rect;
 }
-- (int)setSide:(int)s;
+- (void)setSide:(int)s;
 - (int)side;
 - (int)area;
 - (int)perimeter;
