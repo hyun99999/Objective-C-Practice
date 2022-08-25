@@ -53,6 +53,16 @@
 #endif
 // 전처리기 명령문을 시작하는 # 다음에는 원하는 만큼 빈칸을 넣을 수 있다.
 
+// DEBUG 가 0이 아니라면 실행.
+#if defined (DEBUG)
+// ...
+#endif
+
+// 아래와 동일하다.
+#ifdef DEBUG
+// ...
+#endif
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *userName = @"tas";
