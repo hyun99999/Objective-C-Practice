@@ -63,6 +63,8 @@
 // ...
 #endif
 
+#undef IPAD
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *userName = @"tas";
