@@ -29,6 +29,22 @@
 // ✅ y 는 글자를대치하는 일을 할 뿐이기 때문에 위와 같이 사용할 수 있다.
 // 그리고 이런 정의를 매크로 라고 부른다.
 
+#define SQUARE(x) x * x
+
+//SQUARE (v);
+// v * v
+
+//SQUARE (v + 1);
+// (v + 1) * (v + 1) 를 기대하고 사용했을 것이다. 하지만 디파인은 텍스트를 대치해준다.
+// v + 1 * v + 1 로 대치되고, 우리가 예상했던 결과 값을 나타내주지 않는다.
+// 이를 해결하기 위해서는 디파인 문을 다음과 같이 수정해야 한다.
+#define SQUARE(x) (x) * (x)
+
+// 이 외에도 다음과 같이도 사용할 수 있다.
+#define MAX(a, b) ( ((a) > (b)) ? (a) : (b) )
+#define IS_LOWER_CASE(x) ( ((x) >= 'a') && ((x) <= 'z') )
+#define TO_UPPER(x) ( IS_LOWER_CASE (x) ? (x) - 'a' + 'A' : (x) )
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
