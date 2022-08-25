@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F8D89D0B28B71F6E003D87D0 /* Objective-C-ch12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C-ch12"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D89D0E28B71F6E003D87D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8D89D1528B72192003D87D0 /* metrics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metrics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D89D0E28B71F6E003D87D0 /* main.m */,
+				F8D89D1528B72192003D87D0 /* metrics.h */,
 			);
 			path = "Objective-C-ch12";
 			sourceTree = "<group>";
