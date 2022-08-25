@@ -46,6 +46,13 @@
 #define IS_LOWER_CASE(x) ( ((x) >= 'a') && ((x) <= 'z') )
 #define TO_UPPER(x) ( IS_LOWER_CASE (x) ? (x) - 'a' + 'A' : (x) )
 
+#ifdef IPAD
+# define kImageFile @"barnHD.png"
+#else
+# define kImageFile @"barn.png"
+#endif
+// 전처리기 명령문을 시작하는 # 다음에는 원하는 만큼 빈칸을 넣을 수 있다.
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
