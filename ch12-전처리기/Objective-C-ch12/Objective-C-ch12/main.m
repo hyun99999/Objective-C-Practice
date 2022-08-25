@@ -55,8 +55,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *userName = @"tas";
+        int userId = 11;
+#ifdef IPAD
+        NSLog(@"User name = %@, id = %i", userName, userId);
+#endif
+        
     }
     return 0;
 }
