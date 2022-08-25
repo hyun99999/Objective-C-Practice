@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "metrics.h"
 
 #define TRUE 1
 #define FALSE 0
